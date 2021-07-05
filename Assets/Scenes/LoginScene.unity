@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 42249505}
   - component: {fileID: 42249506}
   m_Layer: 5
-  m_Name: HGroup1
+  m_Name: UserNameHGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 387829893}
   - component: {fileID: 387829892}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PasswordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 1118356407}
   - component: {fileID: 1118356408}
   m_Layer: 5
-  m_Name: HGroup2
+  m_Name: PasswordHGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,6 +1171,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447692862}
   m_CullTransparentMesh: 0
+--- !u!1 &1503365811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1503365813}
+  - component: {fileID: 1503365812}
+  m_Layer: 0
+  m_Name: PersistantData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1503365812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503365811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cecb51f009c3844caf132094249a642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1503365813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503365811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 535.88007, y: 207.29332, z: -58.94868}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511900327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1509,7 @@ GameObject:
   - component: {fileID: 1802722456}
   - component: {fileID: 1802722455}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: PasswordInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1680,6 +1723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2021232054}
+  - component: {fileID: 2021232055}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -1701,3 +1745,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2021232055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021232053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f65be6b4c7a8e84993a6483b0af17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UserNameInput: {fileID: 1511900329}
+  PasswordInput: {fileID: 1802722455}
+  LoginButton: {fileID: 1447692864}
